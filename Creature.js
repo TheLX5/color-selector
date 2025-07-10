@@ -464,11 +464,12 @@ class Creature {
             colorData.span.innerHTML = `${colorData.colorIndex + this.firstColorIndex}: ${colorData.input.value}`;
         }
 
-        let string = `  ${this.yamlKey}:`
+        let string = `    ${this.yamlKey}: [`
         // for (let i = this.tableRows.length - 1; i >= 0; i--) {
         for (let colorData of this.tableRows) {
-            string += `\n    '${colorData.colorIndex + this.firstColorIndex}': '${colorData.input.value.replace("#", "")}'`
+            string += `\n        '${colorData.input.value}', `
         }
+        string +="\n    ]"
         this.textarea.value = string;
     }
 
