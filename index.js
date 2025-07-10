@@ -7,7 +7,7 @@ function loadValues() {
 
     //this will get rewritten automatically now
     let maxPixelSize = 20;
-    let animationMSPerFrame = 100;
+    let animationMSPerFrame = 60;
 
     document.getElementById("span-instructions").innerHTML = `Click ${characterName} to pause/continue animation`
     document.getElementById("additional-info").innerHTML = `${additionalInfoOrInstructions}`
