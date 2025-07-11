@@ -1,8 +1,8 @@
 :root {
-  --background: #d6eaf2;
-  --buttonGroupARGB: 253, 202, 206;
+  --background: #f2eed6;
+  --buttonGroupARGB: 235, 212, 82;
   /** as RGB values instead of hex - so that the color can have a calculated transparent */
-  --buttonGroupBRGB: 102, 30, 42;
+  --buttonGroupBRGB: 117, 79, 22;
 
   /** calculated these from values above */
   --buttonGroupA: rgba(var(--buttonGroupARGB), 1);
