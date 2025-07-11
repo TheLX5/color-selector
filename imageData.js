@@ -1,4 +1,4 @@
-let backgroundColorInCanvas = "#d6eaf2"
+let backgroundColorInCanvas = "#d3cdaf"
 let yamlOptionName = 'Donkey'
 let firstColorIndexInYamlOption = 1;
 let characterName = "Donkey Kong"
@@ -387,15 +387,21 @@ let colorGroupNames = ["Fur", "Skin", "Tie/Mouth"]
 // animation frames - some frames are repeated for the animation:
 let animationWalk = [imageDKWalk_01, imageDKWalk_02, imageDKWalk_03, imageDKWalk_04, imageDKWalk_05, imageDKWalk_06, imageDKWalk_07, imageDKWalk_08, imageDKWalk_09, imageDKWalk_10, imageDKWalk_11, imageDKWalk_12, imageDKWalk_13, imageDKWalk_14, imageDKWalk_15, imageDKWalk_16, imageDKWalk_17, imageDKWalk_18, imageDKWalk_19, imageDKWalk_20];
 let animationRolling = [imageDKRoll_01, imageDKRoll_02, imageDKRoll_03, imageDKRoll_04, imageDKRoll_05, imageDKRoll_06, imageDKRoll_07, imageDKRoll_08, imageDKRoll_09, imageDKRoll_10, imageDKRoll_11, imageDKRoll_12, imageDKRoll_13, imageDKRoll_14, imageDKRoll_15, imageDKRoll_16];
+let animationHit = [imageDKHit_01, imageDKHit_02, imageDKHit_03, imageDKHit_04];
 let animations = [
     {
         animationName: "Walking",
         animationImages: animationWalk,
-        animationSeconds: .2
+        animationSeconds: 1
     },
     {
         animationName: "Rolling",
         animationImages: animationRolling,
-        animationSeconds: 1.1
+        animationSeconds: 0.75
+    },
+    {
+        animationName: "Hit",
+        animationImages: animationHit,
+        animationSeconds: .35
     }
 ];
