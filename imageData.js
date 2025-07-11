@@ -390,11 +390,12 @@ let animationRolling = [imageDKRoll_01, imageDKRoll_02, imageDKRoll_03, imageDKR
 let animations = [
     {
         animationName: "Walking",
-        animationImages: animationWalk
+        animationImages: animationWalk,
+        animationSeconds: .2
     },
     {
         animationName: "Rolling",
-        animationImages: animationRolling
+        animationImages: animationRolling,
+        animationSeconds: 1.1
     }
 ];
-
