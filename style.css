@@ -4,6 +4,8 @@
   /** as RGB values instead of hex - so that the color can have a calculated transparent */
   --buttonGroupBRGB: 117, 79, 22;
 
+  --buttonFontColor: white;
+
   /** calculated these from values above */
   --buttonGroupA: rgba(var(--buttonGroupARGB), 1);
   --buttonGroupB: rgba(var(--buttonGroupBRGB), 1);
@@ -11,6 +13,9 @@
   --buttonGroupBSemiTransparent: rgba(var(--buttonGroupBRGB), 0.76);
 }
 
+textarea, #colorHexTable * {
+  font-family: monospace;
+}
 
 body {
   background-color: var(--background);
@@ -85,7 +90,8 @@ button {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  margin: 8px 0 !important;
+  margin: 8px 0;
+  color: var(--buttonFontColor)
 }
 
 button:hover {
